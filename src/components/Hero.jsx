@@ -4,7 +4,10 @@ import resume from "../assets/Mohit_Kushwah.pdf";
 
 export const Hero = () => {
   return (
-    <div id="home" className="md:px-[6vw] sm:px-[4vw] px-[1vw] text-text md:pt-44 sm:pt-40 pt-36 font-poppins relative h-screen w-full overflow-hidden">
+    <div
+      id="home"
+      className="md:px-[6vw] sm:px-[4vw] px-[1rem] text-text md:pt-44 sm:pt-40 pt-36 font-poppins relative h-screen w-full overflow-hidden"
+    >
       <h1 className="text-center font-medium md:text-[6vw] md:leading-[6.5vw] text-5xl">
         Hi, I Am Mohit <br /> A MERN Stack Developer
       </h1>
@@ -38,7 +41,7 @@ export const Hero = () => {
         </a>
       </div>
       <div>
-        <p className="text-[12.5vw] uppercase leading-[9vw] left-0 absolute md:-bottom-[2rem] -bottom-1 text-transparent bg-clip-text bg-gradient-to-tl from-[#3F3F3F] to-[#000000]">
+        <p className="text-[12.5vw] uppercase leading-[9vw] left-0 absolute md:-bottom-[1rem] bottom-0 text-transparent bg-clip-text bg-gradient-to-tl from-[#3F3F3F] to-[#000000] text-center w-full">
           besharamcode
         </p>
       </div>

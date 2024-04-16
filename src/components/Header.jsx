@@ -17,7 +17,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed z-50 font-hind top-0 md:px-[6vw] sm:px-[4vw] px-[1vw] pt-4 text-text flex justify-between items-center w-full">
+    <div className="fixed z-50 font-hind top-0 md:px-[6vw] sm:px-[4vw] px-[1rem] pt-4 text-text flex justify-between items-center w-full">
       <div>
         <p className="font-bold uppercase sm:text-[2.75rem] text-[2rem]">
           .Code
