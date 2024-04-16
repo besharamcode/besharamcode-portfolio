@@ -1,0 +1,34 @@
+/* Imported links */
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-clr: #f7f7f7;
+
+  --ff-hind: "Hind", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.nav-anim::after {
+  content: "";
+  height: 0.1rem;
+  width: 0%;
+  background-color: var(--text-clr);
+  display: inline-block;
+  position: absolute;
+  top: 1.3rem;
+  left: 0;
+  transition: all 0.2s ease-in;
+}
+
+.nav-anim:hover::after {
+  width: 100%;
+}
