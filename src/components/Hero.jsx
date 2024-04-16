@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <div
       id="home"
-      className="md:px-[6vw] sm:px-[4vw] px-[1rem] text-text md:pt-44 sm:pt-40 pt-36 font-poppins relative h-screen w-full overflow-hidden"
+      className="md:px-[6vw] sm:px-[4vw] px-[1rem] text-text md:pt-44 sm:pt-40 pt-36 font-poppins relative h-[100dvh] w-full overflow-hidden"
     >
       <h1 className="text-center font-medium md:text-[6vw] md:leading-[6.5vw] text-5xl">
         Hi, I Am Mohit <br /> A MERN Stack Developer
