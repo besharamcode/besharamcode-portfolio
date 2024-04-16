@@ -33,6 +33,6 @@ html {
 }
 
 header{
-  background: rgba(255, 255, 255, 0.029);
-  backdrop-filter: blur(7.2px);
+  background: rgba(255, 255, 255, 0.019);
+  backdrop-filter: blur(5.2px);
 }
