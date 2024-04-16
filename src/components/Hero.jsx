@@ -41,7 +41,7 @@ export const Hero = () => {
         </a>
       </div>
       <div>
-        <p className="text-[12.5vw] uppercase leading-[9vw] left-0 absolute md:-bottom-[1rem] bottom-0 text-transparent bg-clip-text bg-gradient-to-tl from-[#3F3F3F] to-[#000000] text-center w-full">
+        <p className="text-[12.5vw] uppercase leading-[9vw] left-0 absolute bottom-0 text-transparent bg-clip-text bg-gradient-to-tl from-[#3F3F3F] to-[#000000] text-center w-full">
           besharamcode
         </p>
       </div>
