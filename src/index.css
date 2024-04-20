@@ -5,6 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 :root {
   --text-clr: #f7f7f7;
   --btn-clr: #3f3f3f;
@@ -41,4 +53,22 @@ header {
 .about-img:hover img {
   filter: grayscale(0);
   transform: translate(-5px, -5px);
+}
+
+.card::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--btn-clr);
+  position: absolute;
+  z-index: -100;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover::before {
+  top: -0.5rem;
+  left: -0.5rem;
 }

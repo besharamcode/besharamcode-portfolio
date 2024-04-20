@@ -1,5 +1,4 @@
 import Heading from "./Heading";
-import heroImg from "../assets/about-img.png";
 
 const About = () => {
   return (
