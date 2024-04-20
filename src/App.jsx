@@ -7,9 +7,9 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  new LocomotiveScroll();
+  // new LocomotiveScroll();
   return (
-    <main className=" bg-gradient-to-tl from-[#000000] to-[#3F3F3F] min-h-screen ">
+    <main className=" bg-gradient-to-tl from-black to-btn min-h-screen ">
       <Header />
       <Hero />
       <About />

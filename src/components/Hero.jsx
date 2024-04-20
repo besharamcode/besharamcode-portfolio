@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faLink } from "@fortawesome/free-solid-svg-icons";
 import resume from "../assets/Mohit_Kushwah.pdf";
+import Heading from "./Heading";
 
 export const Hero = () => {
   return (
@@ -19,7 +20,7 @@ export const Hero = () => {
         </p>
         <div className="flex md:gap-20 md:flex-row flex-col gap-5 mt-8 justify-center items-center">
           <a
-            className="uppercase text-sm leading-6 inline-block w-[11rem] text-center border-[#3F3F3F] border-2 hover:scale-105 transition-all px-4 py-3 rounded-full relative z-10"
+            className="uppercase text-sm leading-6 inline-block w-[11rem] text-center border-btn border-2 hover:scale-105 transition-all px-4 py-3 rounded-full relative z-10"
             href={resume}
             download={"Mohit_Kushwah.pdf"}
             target="_blank"
@@ -32,7 +33,7 @@ export const Hero = () => {
           </a>
           <a
             href="#contact"
-            className="uppercase text-sm leading-6 inline-block w-[11rem] text-center bg-[#3F3F3F] hover:scale-105 transition-all px-4 py-3 rounded-full relative z-10"
+            className="uppercase text-sm leading-6 inline-block w-[11rem] text-center bg-btn hover:scale-105 transition-all px-4 py-3 rounded-full relative z-10"
           >
             <FontAwesomeIcon
               className="mr-2 leading-tight relative bottom-[1px] text-xs"
@@ -41,11 +42,7 @@ export const Hero = () => {
             let&apos;s talk
           </a>
         </div>
-        <div className="w-full left-0 absolute -bottom-1">
-          <p className="text-[12.5vw] uppercase leading-[9vw] select-none  text-transparent bg-clip-text bg-gradient-to-tl from-[#3F3F3F] to-[#000000] text-center z-0">
-            besharamcode
-          </p>
-        </div>
+        <Heading heading={"besharamcode"} />
       </div>
     </div>
   );

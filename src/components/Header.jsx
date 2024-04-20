@@ -26,7 +26,7 @@ const Header = () => {
       </div>
       <nav
         id="navbar"
-        className="absolute z-10 transition-all -top-[50rem] md:top-[unset] md:static bg-bg md:bg-transparent w-full rounded-md left-1/2 md:translate-x-0 -translate-x-1/2 md:w-fit md:bg-none bg-gradient-to-tl from-[#000000] to-[#3F3F3F]"
+        className="absolute z-10 transition-all -top-[50rem] md:top-[unset] md:static bg-bg md:bg-transparent w-full rounded-md left-1/2 md:translate-x-0 -translate-x-1/2 md:w-fit md:bg-none bg-gradient-to-tl from-black to-btn"
       >
         <ul className="items-center gap-6 md:flex md:items-center md:justify-evenly md:gap-6">
           {[

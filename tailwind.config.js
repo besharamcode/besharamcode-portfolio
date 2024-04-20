@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         text: "var(--text-clr)",
+        btn: "var(--btn-clr)",
       },
     },
   },

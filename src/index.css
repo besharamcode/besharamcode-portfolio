@@ -7,6 +7,7 @@
 
 :root {
   --text-clr: #f7f7f7;
+  --btn-clr: #3f3f3f;
 
   --ff-hind: "Hind", sans-serif;
   --ff-poppins: "Poppins", sans-serif;
@@ -32,7 +33,12 @@ html {
   width: 100%;
 }
 
-header{
+header {
   background: rgba(255, 255, 255, 0.019);
   backdrop-filter: blur(5.2px);
+}
+
+.about-img:hover img {
+  filter: grayscale(0);
+  transform: translate(-5px, -5px);
 }
