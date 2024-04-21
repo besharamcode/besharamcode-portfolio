@@ -1,5 +1,6 @@
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -20,9 +21,13 @@ const Header = () => {
     <header className="fixed z-40 font-hind top-0 md:px-[6vw] sm:px-[4vw] px-[1rem] pt-4 text-text flex justify-between items-center w-full">
       <div className="absolute z-0 w-full h-full left-0 top-0"></div>
       <div>
-        <p className="relative font-bold uppercase sm:text-[2.75rem] text-[2rem]">
+        <motion.p
+          initial={{ x: -100 }}
+          animate={{ x: 0 }}
+          className="relative font-bold uppercase sm:text-[2.75rem] text-[2rem]"
+        >
           .Code
-        </p>
+        </motion.p>
       </div>
       <nav
         id="navbar"
@@ -37,7 +42,10 @@ const Header = () => {
             { title: "Contact", link: "#contact" },
           ].map((link, i) => {
             return (
-              <li
+              <motion.li
+                initial={{ x: "50vw" }}
+                animate={{ x: 0 }}
+                transition={{ delay: 0.15 * i }}
                 key={i}
                 className="text-center md:text-start md:my-[unset] my-4"
               >
@@ -49,7 +57,7 @@ const Header = () => {
                 >
                   {link.title}
                 </a>
-              </li>
+              </motion.li>
             );
           })}
         </ul>
@@ -64,7 +72,9 @@ const Header = () => {
           <FontAwesomeIcon icon={faXmark} className="text-text text-2xl " />
         </button>
       </nav>
-      <button
+      <motion.button
+        initial={{ x: 100 }}
+        animate={{ x: 0 }}
         onClick={() => {
           const nav = document.getElementById("navbar");
           nav.classList.remove("-top-[50rem]");
@@ -73,7 +83,7 @@ const Header = () => {
         className="md:hidden bg-transparent border-none relative"
       >
         <FontAwesomeIcon icon={faBars} className="text-text text-2xl" />
-      </button>
+      </motion.button>
     </header>
   );
 };

@@ -4,7 +4,10 @@ import { skillsCards } from "../constants/constants";
 
 const Skills = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ amount: 0.5 }}
       id="skills"
       className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] relative overflow-hidden grid place-items-center"
     >
@@ -12,7 +15,10 @@ const Skills = () => {
         <div className="cards w-full flex items-center flex-wrap justify-center gap-8">
           {skillsCards.map((card, i) => {
             return (
-              <div
+              <motion.div
+                initial={{ y: 100 }}
+                whileInView={{ y: 0 }}
+                transition={{ delay: 0.02 * i }}
                 className="card size-[9rem] rounded-xl p-4 grid place-items-center bg-gradient-to-tl from-btn to-black transition-all relative z-10"
                 key={i}
               >
@@ -24,13 +30,13 @@ const Skills = () => {
                 <h3 className="uppercase text-xl mt-2 -mb-2 font-medium font-hind text-[#7B7B7B]">
                   {card.title}
                 </h3>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
       <Heading heading={"what can i do"} />
-    </div>
+    </motion.div>
   );
 };
 

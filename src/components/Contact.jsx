@@ -2,6 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Heading from "./Heading";
 import { contactCards } from "../constants/constants";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { sendMail } from "../libs/sendMail";
 
 const Contact = () => {
   const [form, setForm] = useState({});
@@ -37,19 +40,24 @@ const Contact = () => {
     }
   };
 
-  const handleFormSubmit = () => {
+  const handleFormSubmit = async () => {
     if (!error) {
-      console.log(form);
+      const response = await sendMail(form);
+      if (response.success) {
+        toast.success(response.message);
+      } else {
+        toast.error(response.message);
+      }
     }
   };
 
   return (
     <div
       id="contact"
-      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] w-full relative overflow-hidden grid place-items-center"
+      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] w-full relative overflow-hidden grid place-items-center no-scrollbar"
     >
       <div className="w-full">
-        <div className="icons flex gap-8 justify-center">
+        <div className="icons flex gap-8 flex-wrap justify-center">
           {contactCards.length > 0 &&
             contactCards.map((card, i) => {
               return (
@@ -67,7 +75,7 @@ const Contact = () => {
             })}
         </div>
         <form
-          className="border-text border w-1/2 px-8 py-3 mx-auto mt-8 rounded-md relative z-10"
+          className="border-text border md:w-1/2 sm:w-3/4 w-[95%]  px-8 py-3 mx-auto mt-8 rounded-md relative z-10 "
           name="mail-from"
           id="mail-from"
         >

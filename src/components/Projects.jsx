@@ -3,10 +3,14 @@ import { projectCards } from "../constants/constants";
 import Heading from "./Heading";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faLock } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ amount: 0.1 }}
       id="projects"
       className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] relative overflow-hidden grid place-items-center"
     >
@@ -18,10 +22,12 @@ const Projects = () => {
                 className="card bg-btn sm:size-[12rem] size-full  rounded-xl p-4 grid place-items-center bg-gradient-to-tl from-btn to-black transition-all relative z-10"
                 key={i}
               >
-                {card.private && <FontAwesomeIcon
-                  className=" text-text absolute top-4 right-4"
-                  icon={faLock}
-                />}
+                {card.private && (
+                  <FontAwesomeIcon
+                    className=" text-text absolute top-4 right-4"
+                    icon={faLock}
+                  />
+                )}
                 <img
                   src={card.imgSrc}
                   alt={card.title}
@@ -59,7 +65,7 @@ const Projects = () => {
       </div>
 
       <Heading heading={"what i did"} />
-    </div>
+    </motion.div>
   );
 };
 

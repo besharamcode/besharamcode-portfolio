@@ -63,17 +63,26 @@ header {
   filter: grayscale(0%);
 }
 
-.card::before {
+.card::before,
+.card::after {
   content: "";
   height: 100%;
   width: 100%;
-  background: var(--btn-clr);
   position: absolute;
-  z-index: -100;
   top: 0rem;
   left: 0rem;
   border-radius: 0.75rem;
   transition: all 0.1s ease-in;
+}
+
+.card::before {
+  z-index: -10;
+  background: var(--btn-clr);
+}
+
+.card::after {
+  background: linear-gradient(135deg, var(--btn-clr), black);
+  z-index: -100;
 }
 
 .card:hover::before {
@@ -81,6 +90,10 @@ header {
   left: -0.5rem;
 }
 
+.card:hover::after {
+  top: 0.5rem;
+  left: 0.5rem;
+}
 input:active,
 input:focus,
 input:focus-visible,
@@ -90,6 +103,6 @@ textarea:focus-visible {
   outline: none;
 }
 
-input[type="number"]{
+input[type="number"] {
   appearance: none;
 }
