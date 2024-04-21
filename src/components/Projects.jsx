@@ -11,11 +11,11 @@ const Projects = () => {
       className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] relative overflow-hidden grid place-items-center"
     >
       <div className="md:h-fit h-[75%] overflow-y-scroll no-scrollbar">
-        <div className="cards  w-full flex items-center flex-wrap justify-center gap-8">
+        <div className="cards  w-full flex items-center flex-wrap justify-center gap-8 p-4">
           {projectCards.map((card, i) => {
             return (
               <div
-                className="card bg-btn sm:size-[12rem] size-full  rounded-xl p-4 grid place-items-center hover:bg-gradient-to-tl hover:from-btn hover:to-black transition-all relative"
+                className="card bg-btn sm:size-[12rem] size-full  rounded-xl p-4 grid place-items-center bg-gradient-to-tl from-btn to-black transition-all relative z-10"
                 key={i}
               >
                 {card.private && <FontAwesomeIcon

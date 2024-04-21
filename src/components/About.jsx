@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div
       id="about"
-      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] relative overflow-hidden grid place-items-center"
+      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] relative overflow-hidden grid place-items-center overflow-y-scroll no-scrollbar"
     >
-      <div className="text md:w-3/4  bg-btn sm:px-12 sm:py-6 px-6 py-8 rounded-xl">
+      <div className="text md:w-3/4  bg-btn sm:px-12 sm:py-6 px-6 py-8 rounded-xl ">
         <p className="text-text text-center mx-auto ">
           Hello! I'm Mohit(Ahmed) Kushwah, A web developer. At the age of 20, I
           have already gained valuable experience in web development and design.

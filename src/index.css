@@ -55,6 +55,14 @@ header {
   transform: translate(-5px, -5px);
 }
 
+.card{
+  filter: grayscale(100%);
+}
+
+.card:hover{
+  filter: grayscale(0%);
+}
+
 .card::before {
   content: "";
   height: 100%;
@@ -65,7 +73,7 @@ header {
   top: 0rem;
   left: 0rem;
   border-radius: 0.75rem;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .card:hover::before {

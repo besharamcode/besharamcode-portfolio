@@ -73,7 +73,7 @@ export const projectCards = [
   {
     title: "frontend-1",
     imgSrc: p7,
-    livelink: "https://besharam3.netlify.app/",
+    liveLink: "https://besharam3.netlify.app/",
     gitLink: "https://github.com/besharamcode/htmlcsspractice2",
   },
   {
