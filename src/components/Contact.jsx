@@ -11,7 +11,6 @@ const Contact = () => {
     if (e.target.name === "email") {
       const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
       const isTrue = regex.test(e.target.value);
-      console.log(isTrue);
       if (!isTrue) {
         e.currentTarget.classList.add("border-red-500");
         setForm({ ...form, [e.target.name]: e.target.value });
