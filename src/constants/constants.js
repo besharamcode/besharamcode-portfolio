@@ -19,6 +19,15 @@ import s8 from "../assets/s8.svg";
 import s9 from "../assets/s9.svg";
 import s10 from "../assets/s10.svg";
 import s11 from "../assets/s11.svg";
+import {
+  faGit,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const projectCards = [
   {
@@ -128,5 +137,38 @@ export const skillsCards = [
   {
     title: "mongodb",
     imgSrc: s11,
+  },
+];
+
+export const contactCards = [
+  {
+    title: "email",
+    link: "mailto:besharamcode@gmail.com",
+    icon: faEnvelope,
+  },
+  {
+    title: "whatsapp",
+    link: "https://api.whatsapp.com/send?phone=9328936499",
+    icon: faWhatsapp,
+  },
+  {
+    title: "linkedin",
+    link: "https://www.linkedin.com/in/besharamcode/",
+    icon: faLinkedin,
+  },
+  {
+    title: "instagram",
+    link: "https://www.instagram.com/besharamcode/",
+    icon: faInstagram,
+  },
+  {
+    title: "github",
+    link: "https://github.com/besharamcode",
+    icon: faGithub,
+  },
+  {
+    title: "twitter",
+    link:"https://twitter.com/Besharamcode",
+    icon: faTwitter,
   },
 ];

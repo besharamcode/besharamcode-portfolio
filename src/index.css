@@ -55,11 +55,11 @@ header {
   transform: translate(-5px, -5px);
 }
 
-.card{
+.card {
   filter: grayscale(100%);
 }
 
-.card:hover{
+.card:hover {
   filter: grayscale(0%);
 }
 
@@ -79,4 +79,17 @@ header {
 .card:hover::before {
   top: -0.5rem;
   left: -0.5rem;
+}
+
+input:active,
+input:focus,
+input:focus-visible,
+textarea:active,
+textarea:focus,
+textarea:focus-visible {
+  outline: none;
+}
+
+input[type="number"]{
+  appearance: none;
 }
