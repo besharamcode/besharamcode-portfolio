@@ -2,10 +2,7 @@ import p1 from "../assets/p1.svg";
 import p2 from "../assets/p2.svg";
 import p3 from "../assets/p3.svg";
 import p4 from "../assets/p4.svg";
-import p5 from "../assets/p5.svg";
-import p6 from "../assets/p6.svg";
-import p7 from "../assets/p7.svg";
-import p8 from "../assets/p8.svg";
+import besharam from "../assets/besharam.svg";
 import p9 from "../assets/p9.svg";
 import p10 from "../assets/p10.svg";
 import s1 from "../assets/s1.svg";
@@ -20,7 +17,6 @@ import s9 from "../assets/s9.svg";
 import s10 from "../assets/s10.svg";
 import s11 from "../assets/s11.svg";
 import {
-  faGit,
   faGithub,
   faInstagram,
   faLinkedin,
@@ -42,6 +38,12 @@ export const projectCards = [
     imgSrc: p2,
     liveLink: "https://farbites.netlify.app/",
     private: true,
+  },
+  {
+    title: "besharamchat",
+    imgSrc: besharam,
+    liveLink: "https://besharamchat.netlify.app/",
+    gitLink: "https://github.com/besharamcode/besharamchat_ui",
   },
   {
     title: "weatherapp",
@@ -69,25 +71,25 @@ export const projectCards = [
   },
   {
     title: "animation-1",
-    imgSrc: p5,
+    imgSrc: besharam,
     liveLink: "https://besharamanim2.netlify.app/",
     gitLink: "https://github.com/besharamcode/animated-website_2",
   },
   {
     title: "animation-2",
-    imgSrc: p6,
+    imgSrc: besharam,
     liveLink: "https://besharamanim1.netlify.app/",
     gitLink: "https://github.com/besharamcode/animated-website",
   },
   {
     title: "frontend-1",
-    imgSrc: p7,
+    imgSrc: besharam,
     liveLink: "https://besharam3.netlify.app/",
     gitLink: "https://github.com/besharamcode/htmlcsspractice2",
   },
   {
     title: "frontend-2",
-    imgSrc: p8,
+    imgSrc: besharam,
     liveLink: "https://besharam2.netlify.app/",
     gitLink: "https://github.com/besharamcode/htmlcsspractice1",
   },
@@ -168,7 +170,7 @@ export const contactCards = [
   },
   {
     title: "twitter",
-    link:"https://twitter.com/Besharamcode",
+    link: "https://twitter.com/Besharamcode",
     icon: faTwitter,
   },
 ];
