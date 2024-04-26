@@ -87,12 +87,6 @@ export const projectCards = [
     liveLink: "https://besharam3.netlify.app/",
     gitLink: "https://github.com/besharamcode/htmlcsspractice2",
   },
-  {
-    title: "frontend-2",
-    imgSrc: besharam,
-    liveLink: "https://besharam2.netlify.app/",
-    gitLink: "https://github.com/besharamcode/htmlcsspractice1",
-  },
 ];
 
 export const skillsCards = [
