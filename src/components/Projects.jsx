@@ -40,7 +40,7 @@ const Projects = () => {
                   <a
                     href={card.gitLink}
                     target="_blank"
-                    className=" size-10 grid place-items-center rounded-full border-text border"
+                    className=" size-6 grid place-items-center rounded-full border-text border"
                   >
                     <FontAwesomeIcon
                       className="text-2xl text-text"
@@ -50,7 +50,7 @@ const Projects = () => {
                   <a
                     href={card.liveLink}
                     target="_blank"
-                    className=" size-10 grid place-items-center rounded-full border-text border"
+                    className=" size-6 grid place-items-center rounded-full border-text border"
                   >
                     <FontAwesomeIcon
                       className="rotate-[145deg] text-2xl text-text"
