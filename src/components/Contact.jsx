@@ -54,7 +54,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100vh] w-full relative overflow-hidden grid place-items-center no-scrollbar"
+      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] w-full relative overflow-hidden grid place-items-center no-scrollbar"
     >
       <div className="w-full">
         <div className="icons flex gap-8 flex-wrap justify-center">
