@@ -7,10 +7,14 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ amount: 0.1 }}
+    // <motion.div
+    //   initial={{ opacity: 0 }}
+    //   whileInView={{ opacity: 1 }}
+    //   viewport={{ amount: 0.1 }}
+    //   id="projects"
+    //   className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100svh] relative overflow-hidden grid place-items-center"
+    // >
+    <div
       id="projects"
       className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100svh] relative overflow-hidden grid place-items-center"
     >
@@ -65,7 +69,7 @@ const Projects = () => {
       </div>
 
       <Heading heading={"what i did"} />
-    </motion.div>
+    </div>
   );
 };
 

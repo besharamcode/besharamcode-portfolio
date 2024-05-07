@@ -6,11 +6,19 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
+    // <motion.div
+    //   initial={{ opacity: 0, y: -100 }}
+    //   animate={{ opacity: 1, y: 0 }}
+    //   exit={{ opacity: 0 }}
+    //   transition={{ duration: 0.5 }}
+    //   id="home"
+    //   className="md:px-[6vw] sm:px-[4vw] px-[1rem] text-text  font-poppins relative h-[100svh] w-full overflow-hidden grid place-items-center"
+    // >
+    <div
+      // initial={{ opacity: 0, y: -100 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // exit={{ opacity: 0 }}
+      // transition={{ duration: 0.5 }}
       id="home"
       className="md:px-[6vw] sm:px-[4vw] px-[1rem] text-text  font-poppins relative h-[100svh] w-full overflow-hidden grid place-items-center"
     >
@@ -49,6 +57,6 @@ export const Hero = () => {
         </div>
         <Heading heading={"besharamcode"} />
       </div>
-    </motion.div>
+    </div>
   );
 };

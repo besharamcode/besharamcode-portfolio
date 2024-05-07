@@ -4,10 +4,14 @@ import { skillsCards } from "../constants/constants";
 
 const Skills = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ amount: 0.3 }}
+    // <motion.div
+    //   initial={{ opacity: 0 }}
+    //   whileInView={{ opacity: 1 }}
+    //   viewport={{ amount: 0.3 }}
+    //   id="skills"
+    //   className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100svh] relative overflow-hidden grid place-items-center"
+    // >
+      <div
       id="skills"
       className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100svh] relative overflow-hidden grid place-items-center"
     >
@@ -36,7 +40,7 @@ const Skills = () => {
         </div>
       </div>
       <Heading heading={"what can i do"} />
-    </motion.div>
+    </div>
   );
 };
 
