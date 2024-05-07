@@ -8,11 +8,11 @@ const About = () => {
     //   whileInView={{ opacity: 1, x: 0 }}
     //   viewport={{ amount: 0.5 }}
     //   id="about"
-    //   className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100svh] relative overflow-hidden grid place-items-center md:overflow-visible overflow-y-scroll no-scrollbar"
+    //   className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100vh] relative overflow-hidden grid place-items-center md:overflow-visible overflow-y-scroll no-scrollbar"
     // >
     <div
       id="about"
-      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100svh] relative overflow-hidden grid place-items-center md:overflow-visible overflow-y-scroll no-scrollbar"
+      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100vh] relative overflow-hidden grid place-items-center md:overflow-visible overflow-y-scroll no-scrollbar"
     >
       <div className="text md:w-3/4  bg-btn sm:px-12 sm:py-6 px-6 py-8 rounded-xl ">
         <p className="text-text text-center mx-auto ">
