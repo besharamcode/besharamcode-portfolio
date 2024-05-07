@@ -15,7 +15,7 @@ function App() {
       <main className=" bg-gradient-to-tl from-black to-btn min-h-screen no-scrollbar bg-fixed">
         <Header />
         <Hero />
-        <About />
+        {/* <About /> */}
         <Skills />
         <Projects />
         <Contact />
