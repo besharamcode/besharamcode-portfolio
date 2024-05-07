@@ -9,7 +9,7 @@ const Skills = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ amount: 0.3 }}
       id="skills"
-      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] relative overflow-hidden grid place-items-center"
+      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100svh] relative overflow-hidden grid place-items-center"
     >
       <div className="md:h-fit h-[75%] overflow-y-scroll no-scrollbar p-3">
         <div className="cards w-full flex items-center flex-wrap justify-center gap-8">
