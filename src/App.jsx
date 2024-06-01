@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import { ToastContainer } from "react-toastify";
 
 function App() {
-  new LocomotiveScroll();
+  // new LocomotiveScroll();
   return (
     <>
       <ToastContainer />
