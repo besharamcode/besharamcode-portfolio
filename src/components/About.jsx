@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] relative overflow-hidden grid place-items-center md:overflow-visible overflow-y-scroll no-scrollbar"
+      className="md:px-[6vw] sm:px-[4vw] px-[1rem] min-h-screen relative overflow-hidden grid place-items-center md:overflow-visible overflow-y-scroll no-scrollbar"
     >
 
       <div className="text md:w-3/4  bg-btn sm:px-12 sm:py-6 px-6 py-8 rounded-xl ">
