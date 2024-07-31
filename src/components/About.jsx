@@ -3,10 +3,7 @@ import Heading from "./Heading";
 
 const About = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ amount: 0.5 }}
+    <div
       id="about"
       className="md:px-[6vw] sm:px-[4vw] px-[1rem] h-[100dvh] relative overflow-hidden grid place-items-center md:overflow-visible overflow-y-scroll no-scrollbar"
     >
@@ -30,7 +27,7 @@ const About = () => {
         </p>
       </div>
       <Heading heading={"about me"} />
-    </motion.div>
+    </div>
   );
 };
 
