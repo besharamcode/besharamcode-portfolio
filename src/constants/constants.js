@@ -1,10 +1,8 @@
 import p1 from "../assets/p1.svg";
 import p2 from "../assets/p2.svg";
 import p3 from "../assets/p3.svg";
-import p4 from "../assets/p4.svg";
+import pathtopeace from "../assets/pathtopeace.png";
 import besharam from "../assets/besharam.svg";
-import p9 from "../assets/p9.svg";
-import p10 from "../assets/p10.svg";
 import s1 from "../assets/s1.svg";
 import s2 from "../assets/s2.svg";
 import s3 from "../assets/s3.svg";
@@ -33,8 +31,13 @@ export const projectCards = [
     private: true,
   },
   {
+    title: "pathtopeace",
+    imgSrc: pathtopeace,
+    liveLink: "https://path2peace.in/",
+    private: true,
+  },
+  {
     title: "f.a.r bites",
-    imgSrc: p2,
     imgSrc: p2,
     liveLink: "https://farbites.netlify.app/",
     private: true,
@@ -46,46 +49,10 @@ export const projectCards = [
     gitLink: "https://github.com/besharamcode/besharamchat_ui",
   },
   {
-    title: "weatherapp",
-    imgSrc: p9,
-    liveLink: "https://besharamweather.netlify.app/",
-    gitLink: "https://github.com/besharamcode/besharam-Weather",
-  },
-  {
-    title: "moviemania",
-    imgSrc: p10,
-    liveLink: "https://besharammovies.netlify.app/",
-    gitLink: "https://github.com/besharamcode/moviemania",
-  },
-  {
     title: "ochi",
     imgSrc: p3,
     gitLink: "https://github.com/besharamcode/ochi-clone",
     liveLink: "https://besharamochi.netlify.app/",
-  },
-  {
-    title: "pinterest",
-    imgSrc: p4,
-    liveLink: "https://besharam-pinterest.netlify.app/",
-    gitLink: "https://github.com/besharamcode/pintrest-clone",
-  },
-  {
-    title: "animation-1",
-    imgSrc: besharam,
-    liveLink: "https://besharamanim2.netlify.app/",
-    gitLink: "https://github.com/besharamcode/animated-website_2",
-  },
-  {
-    title: "animation-2",
-    imgSrc: besharam,
-    liveLink: "https://besharamanim1.netlify.app/",
-    gitLink: "https://github.com/besharamcode/animated-website",
-  },
-  {
-    title: "frontend-1",
-    imgSrc: besharam,
-    liveLink: "https://besharam3.netlify.app/",
-    gitLink: "https://github.com/besharamcode/htmlcsspractice2",
   },
 ];
 
