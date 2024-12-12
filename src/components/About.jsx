@@ -9,7 +9,7 @@ const About = () => {
     >
       <div className="text md:w-3/4  bg-btn sm:px-12 sm:py-6 px-6 py-8 rounded-xl ">
         <p className="text-text text-center mx-auto ">
-          Hello! I'm Mohit(Ahmed) Kushwah, A web developer. At the age of 20, I
+          Hello! I'm Mohit Kushwah, A web developer. At the age of 22, I
           have already gained valuable experience in web development. I am
           passionate about creating engaging and user-friendly websites. With my
           skills in web development, I offer a versatile skill set. I am
